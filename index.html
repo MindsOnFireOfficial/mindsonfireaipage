@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise AI &amp; Internal Efficiency | Minds On Fire</title>
+  <meta name="description" content="Minds On Fire builds enterprise-grade AI systems for mid-market and large organizations — internal efficiency, operational automation, compliance, and custom AI platforms. Proven at scale." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ai.mindsonfire.ca/" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Minds On Fire Enterprise AI Systems",
+    "provider": {
+      "@type": "Organization",
+      "name": "Minds On Fire",
+      "url": "https://mindsonfire.ca"
+    },
+    "serviceType": "Enterprise AI / Operational Automation / Internal Efficiency",
+    "description": "Custom AI platforms, agentic workflows, and operational automation for mid-market and enterprise organizations. Internal efficiency, compliance automation, and multi-system integrations.",
+    "url": "https://ai.mindsonfire.ca",
+    "areaServed": ["Canada", "United States", "North America"]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0C0C0C;
+      --black-soft: #0f0f0f;
+      --black-card: #141414;
+      --black-card2: #181818;
+      --black-border: #1e1e1e;
+      --black-border2: #2a2a2a;
+      --gold: #C9A84C;
+      --gold-light: #E2C06A;
+      --gold-dim: rgba(201, 168, 76, 0.12);
+      --gold-glow: rgba(201, 168, 76, 0.06);
+      --white: #FFFFFF;
+      --white-dim: rgba(255,255,255,0.85);
+      --gray: #777777;
+      --gray-light: #AAAAAA;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
+    .gold { color: var(--gold); }
+    .serif { font-family: var(--font-serif); }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(12, 12, 12, 0.94);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--black-border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .nav-logo img {
+      height: 108px;
+      width: auto;
+      display: block;
+    }
+    .nav-sub {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-left: 12px;
+      padding-left: 12px;
+      border-left: 1px solid var(--black-border2);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray-light);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      background: transparent !important;
+      color: var(--gold) !important;
+      border: 1px solid rgba(201, 168, 76, 0.5) !important;
+      padding: 9px 22px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      transition: background 0.2s, border-color 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold-dim) !important; border-color: var(--gold) !important; }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+    .hero-bg { display: none; }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 65% 40%, rgba(201,168,76,0.07) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(201,168,76,0.04) 0%, transparent 50%), linear-gradient(160deg, #111111 0%, #0C0C0C 100%);
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow-line {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(38px, 5vw, 62px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--gray-light);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold);
+      color: var(--black);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      padding: 14px 24px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 6px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Hero Right — Stats Panel */
+    .hero-panel {
+      background: var(--black-card);
+      border: 1px solid var(--black-border2);
+      border-radius: 16px;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-panel::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .hero-panel-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+    .hero-stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--black-border);
+    }
+    .hero-stat-row:last-child { border-bottom: none; }
+    .hero-stat-label {
+      font-size: 13px;
+      color: var(--gray-light);
+      max-width: 200px;
+      line-height: 1.5;
+    }
+    .hero-stat-value {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--gold);
+      text-align: right;
+    }
+    .hero-stat-value small {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--gray);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 100px 0; }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 4vw, 50px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+    .section-sub {
+      font-size: 17px;
+      color: var(--gray-light);
+      line-height: 1.75;
+      max-width: 620px;
+    }
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 18px 0 24px;
+    }
+
+    /* ─── CAPABILITY PILLARS ─── */
+    .pillars-section {
+      background: var(--black-soft);
+      border-top: 1px solid var(--black-border);
+      border-bottom: 1px solid var(--black-border);
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--black-border);
+      border: 1px solid var(--black-border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 56px;
+    }
+    .pillar-card {
+      background: var(--black-card);
+      padding: 40px 28px;
+      transition: background 0.2s;
+    }
+    .pillar-card:hover { background: #181818; }
+    .pillar-num {
+      font-family: var(--font-serif);
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(201, 168, 76, 0.15);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .pillar-card h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .pillar-card p {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.7;
+    }
+
+    /* ─── USE CASES ─── */
+    .usecases-section { }
+    .usecase-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 100px;
+      padding-bottom: 100px;
+      border-bottom: 1px solid var(--black-border);
+    }
+    .usecase-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .usecase-block.reverse { direction: rtl; }
+    .usecase-block.reverse > * { direction: ltr; }
+    .usecase-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: var(--gold-dim);
+      border: 1px solid rgba(201,168,76,0.2);
+      padding: 5px 12px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .usecase-block h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .usecase-block h3 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .usecase-block > div > p {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+    .usecase-outcomes {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    .usecase-outcomes li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      font-size: 14px;
+      color: var(--gray-light);
+      border-bottom: 1px solid var(--black-border);
+    }
+    .usecase-outcomes li:last-child { border-bottom: none; }
+    .usecase-outcomes li::before {
+      content: '→';
+      color: var(--gold);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .usecase-visual {
+      background: var(--black-card);
+      border: 1px solid var(--black-border2);
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+    .usecase-visual img {
+      width: 100%;
+      display: block;
+      opacity: 0.7;
+    }
+    .usecase-visual-content {
+      padding: 32px;
+    }
+    .usecase-visual-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .usecase-metric-row {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+    .usecase-metric {
+      flex: 1;
+      background: var(--black-card2);
+      border: 1px solid var(--black-border);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .usecase-metric-num {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .usecase-metric-label {
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .usecase-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .flow-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--black-card2);
+      border: 1px solid var(--black-border);
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--gray-light);
+    }
+    .flow-step-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .flow-step-num {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      width: 20px;
+      flex-shrink: 0;
+    }
+
+    /* ─── ARCHITECTURE ─── */
+    .arch-section {
+      background: var(--black-soft);
+      border-top: 1px solid var(--black-border);
+      border-bottom: 1px solid var(--black-border);
+    }
+    .arch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .arch-layers {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .arch-layer {
+      background: var(--black-card);
+      border: 1px solid var(--black-border2);
+      border-radius: 8px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s;
+    }
+    .arch-layer:hover { border-color: rgba(201,168,76,0.3); }
+    .arch-layer-icon {
+      width: 40px; height: 40px;
+      border-radius: 8px;
+      background: var(--gold-dim);
+      border: 1px solid rgba(201,168,76,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .arch-layer-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2px;
+    }
+    .arch-layer-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 2px;
+    }
+    .arch-layer-desc {
+      font-size: 13px;
+      color: var(--gray);
+    }
+    .arch-connector {
+      width: 2px;
+      height: 16px;
+      background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.2));
+      margin: 0 0 0 31px;
+    }
+
+    /* ─── INDUSTRIES ─── */
+    .industries-section { }
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+    }
+    .industry-card {
+      background: var(--black-card);
+      border: 1px solid var(--black-border2);
+      border-radius: 10px;
+      padding: 32px 28px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .industry-card:hover {
+      border-color: rgba(201,168,76,0.3);
+      background: #181818;
+    }
+    .industry-icon { font-size: 32px; margin-bottom: 16px; }
+    .industry-card h4 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .industry-card p {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .industry-use-cases {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .industry-use-cases li {
+      font-size: 12px;
+      color: var(--gray);
+      padding-left: 14px;
+      position: relative;
+    }
+    .industry-use-cases li::before {
+      content: '·';
+      position: absolute;
+      left: 4px;
+      color: var(--gold);
+    }
+
+    /* ─── ENGAGEMENT MODEL ─── */
+    .engagement-section {
+      background: var(--black-soft);
+      border-top: 1px solid var(--black-border);
+      border-bottom: 1px solid var(--black-border);
+    }
+    .engagement-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      margin-top: 56px;
+      position: relative;
+    }
+    .engagement-steps::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold), rgba(201,168,76,0.15));
+    }
+    .engagement-step {
+      padding: 0 12px;
+      text-align: center;
+    }
+    .eng-num {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--black-card);
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .engagement-step h5 {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .engagement-step p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+
+    /* ─── PROOF / NEWSLETTER CALLOUT ─── */
+    .proof-section { }
+    .proof-banner {
+      background: var(--black-card);
+      border: 1px solid var(--black-border2);
+      border-radius: 16px;
+      padding: 56px 64px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .proof-banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .proof-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.08), transparent 70%);
+    }
+    .proof-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .proof-stat { }
+    .proof-stat-num {
+      font-family: var(--font-serif);
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .proof-stat-label {
+      font-size: 13px;
+      color: var(--gray-light);
+      line-height: 1.5;
+    }
+
+    /* ─── CTA ─── */
+    .cta-section {
+      text-align: center;
+      padding: 120px 0;
+    }
+    .cta-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .cta-section .section-title { margin: 0 auto 20px; }
+    .cta-section .section-sub { margin: 0 auto 40px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--black-soft);
+      border-top: 1px solid var(--black-border);
+      padding: 56px 0 32px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .nav-logo { display: inline-flex; margin-bottom: 12px; }
+    .footer-brand .nav-logo img { height: 135px; width: auto; }
+    .footer-brand p { font-size: 13px; color: var(--gray); line-height: 1.7; margin-bottom: 20px; }
+    .footer-links h5 {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a {
+      font-size: 14px;
+      color: var(--gray-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid var(--black-border);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 13px; color: var(--gray); }
+    .footer-bottom a { color: var(--gray); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--gold); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-panel { display: none; }
+      .pillars-grid { grid-template-columns: 1fr 1fr; }
+      .usecase-block { grid-template-columns: 1fr; gap: 40px; }
+      .usecase-block.reverse { direction: ltr; }
+      .arch-grid { grid-template-columns: 1fr; gap: 48px; }
+      .industries-grid { grid-template-columns: 1fr 1fr; }
+      .engagement-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .engagement-steps::before { display: none; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 24px; }
+      section { padding: 72px 0; }
+      .nav-links { display: none; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .industries-grid { grid-template-columns: 1fr; }
+      .proof-banner { grid-template-columns: 1fr; padding: 36px 28px; }
+      .proof-stat-grid { grid-template-columns: 1fr 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+      .engagement-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <a href="https://mindsonfire.ca" class="nav-logo"><img src="MOF_Logo.png" alt="Minds On Fire" /></a>
+          <span class="nav-sub">Enterprise AI</span>
+        </div>
+      <ul class="nav-links">
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="nav-cta">Book a Strategy Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-line"></span>
+            Mid-Market &amp; Enterprise AI
+          </div>
+          <h1>Your Operations Are Generating Data. Your AI Should Be <em>Acting on It.</em></h1>
+          <p class="hero-sub">
+            Minds On Fire designs and deploys enterprise-grade AI systems that eliminate operational drag, surface intelligence from your data, and automate the workflows your teams are doing manually today. We build for complexity — multi-system integrations, compliance-aware architectures, and agentic platforms that scale with your organization.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-primary">
+              Book a Strategy Call →
+            </a>
+            <a href="#use-cases" class="btn-ghost">See Use Cases</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-panel-title">Operational Impact — Client Benchmarks</div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-label">Reduction in manual processing time across operations</div>
+            <div class="hero-stat-value">73%<small>Time Saved</small></div>
+          </div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-label">Faster service quoting for field service organizations</div>
+            <div class="hero-stat-value">4×<small>Quote Speed</small></div>
+          </div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-label">Reduction in order exception escalations for distributors</div>
+            <div class="hero-stat-value">68%<small>Fewer Exceptions</small></div>
+          </div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-label">Increase in remarketing conversion from dormant accounts</div>
+            <div class="hero-stat-value">3.2×<small>Conversion Lift</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CAPABILITY PILLARS ─── -->
+  <section class="pillars-section" id="capabilities">
+    <div class="container">
+      <div class="section-label">Core Capabilities</div>
+      <h2 class="section-title">Built for the Complexity of <em class="gold">Real Organizations</em></h2>
+      <p class="section-sub">
+        We don't sell software subscriptions. We engineer AI systems custom-built for your organization's data, workflows, and integration environment.
+      </p>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h3>Agentic Workflow Automation</h3>
+          <p>Multi-step AI agents that execute complex business processes end-to-end — from data ingestion to decision-making to action — without human intervention at each step.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-num">02</div>
+          <h3>Unified Intelligence Architecture</h3>
+          <p>We connect your ERP, CRM, field systems, and communication platforms into a single AI layer that reads, reasons, and acts across your entire operational stack.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-num">03</div>
+          <h3>Internal Efficiency Systems</h3>
+          <p>AI-powered tools that eliminate the manual, repetitive work your teams do every day — exception management, report generation, compliance checks, and internal routing.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-num">04</div>
+          <h3>Custom AI Platform Development</h3>
+          <p>Full-stack AI platforms built for your organization — custom dashboards, model integrations, MCP server deployments, and internal tools your teams actually use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── USE CASES ─── -->
+  <section id="use-cases">
+    <div class="container">
+      <div class="section-label">Use Cases</div>
+      <h2 class="section-title">What <em class="gold">Internal Efficiency</em> Looks Like in Practice</h2>
+      <p class="section-sub" style="margin-bottom:72px;">
+        These are real operational problems we solve. Each engagement is custom-built — but these examples show the type of complexity we're built for.
+      </p>
+
+      <!-- Use Case 1: Insurance Remarketing -->
+      <div class="usecase-block">
+        <div>
+          <div class="usecase-tag">Insurance · Revenue Recovery</div>
+          <h3>Dormant Policy <em>Remarketing</em> at Scale</h3>
+          <p>
+            Most insurance organizations have thousands of dormant accounts — lapsed policies, unconverted quotes, and past clients who went quiet. Manually re-engaging them is expensive and inconsistent. We build AI remarketing systems that identify high-intent re-engagement windows, generate personalized outreach, and route warm responses to your producers automatically.
+          </p>
+          <ul class="usecase-outcomes">
+            <li>AI identifies dormant accounts by lapse date, policy type, and re-engagement probability</li>
+            <li>Personalized multi-channel sequences deployed without manual effort</li>
+            <li>Warm responses routed to the right producer with full context</li>
+            <li>Integrates with your existing AMS or CRM — no data migration required</li>
+          </ul>
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-ghost">Discuss This Use Case →</a>
+        </div>
+        <div class="usecase-visual">
+          <div class="usecase-visual-content">
+            <div class="usecase-visual-label">System Flow — Insurance Remarketing Agent</div>
+            <div class="usecase-metric-row">
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">3.2×</div>
+                <div class="usecase-metric-label">Conversion Lift</div>
+              </div>
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">87%</div>
+                <div class="usecase-metric-label">Less Manual Work</div>
+              </div>
+            </div>
+            <div class="usecase-flow">
+              <div class="flow-step"><span class="flow-step-num">01</span> AMS/CRM pulls dormant account data nightly</div>
+              <div class="flow-step"><span class="flow-step-num">02</span> AI scores re-engagement probability by account</div>
+              <div class="flow-step"><span class="flow-step-num">03</span> Personalized outreach sequences deployed automatically</div>
+              <div class="flow-step"><span class="flow-step-num">04</span> Responses detected and routed to assigned producer</div>
+              <div class="flow-step"><span class="flow-step-num">05</span> Performance dashboard updated in real-time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use Case 2: Field Service Quoting -->
+      <div class="usecase-block reverse">
+        <div>
+          <div class="usecase-tag">Trades &amp; Field Services · Operational Efficiency</div>
+          <h3>AI-Powered <em>Service Quoting</em> for Field Teams</h3>
+          <p>
+            Field service companies lose hours every day to manual quoting — technicians calling back to the office, coordinators building estimates from scratch, and customers waiting days for a number. We build AI quoting systems that let field teams generate accurate, approved quotes on-site using a mobile interface backed by your pricing logic and job history.
+          </p>
+          <ul class="usecase-outcomes">
+            <li>Technician inputs job scope on mobile — AI generates quote in under 60 seconds</li>
+            <li>Quotes reference your actual pricing rules, parts database, and labour rates</li>
+            <li>Manager approval workflow built in for jobs above threshold</li>
+            <li>Quote accepted → work order created automatically in your field management system</li>
+          </ul>
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-ghost">Discuss This Use Case →</a>
+        </div>
+        <div class="usecase-visual">
+          <div class="usecase-visual-content">
+            <div class="usecase-visual-label">System Flow — Field Quoting Agent</div>
+            <div class="usecase-metric-row">
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">4×</div>
+                <div class="usecase-metric-label">Faster Quotes</div>
+              </div>
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">91%</div>
+                <div class="usecase-metric-label">Quote Accuracy</div>
+              </div>
+            </div>
+            <div class="usecase-flow">
+              <div class="flow-step"><span class="flow-step-num">01</span> Technician opens mobile app on-site</div>
+              <div class="flow-step"><span class="flow-step-num">02</span> Describes job scope — AI parses and classifies</div>
+              <div class="flow-step"><span class="flow-step-num">03</span> AI references pricing DB and generates quote</div>
+              <div class="flow-step"><span class="flow-step-num">04</span> Quote reviewed and sent to customer on-site</div>
+              <div class="flow-step"><span class="flow-step-num">05</span> Acceptance triggers work order in field system</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use Case 3: Distribution Exception Management -->
+      <div class="usecase-block">
+        <div>
+          <div class="usecase-tag">Distribution &amp; Logistics · Internal Efficiency</div>
+          <h3>Order Exception <em>Management</em> Automation</h3>
+          <p>
+            Distribution operations generate hundreds of order exceptions every week — backorders, substitutions, pricing discrepancies, and delivery failures. Managing them manually means your team spends hours triaging emails and updating systems instead of solving the actual problem. We build AI exception management systems that classify, route, and resolve the majority of exceptions without human intervention.
+          </p>
+          <ul class="usecase-outcomes">
+            <li>AI classifies incoming exceptions by type, urgency, and resolution path</li>
+            <li>Standard exceptions resolved automatically using your business rules</li>
+            <li>Complex exceptions escalated with full context and recommended resolution</li>
+            <li>Customer communications sent automatically for impacted orders</li>
+          </ul>
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-ghost">Discuss This Use Case →</a>
+        </div>
+        <div class="usecase-visual">
+          <div class="usecase-visual-content">
+            <div class="usecase-visual-label">System Flow — Exception Management Agent</div>
+            <div class="usecase-metric-row">
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">68%</div>
+                <div class="usecase-metric-label">Auto-Resolved</div>
+              </div>
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">73%</div>
+                <div class="usecase-metric-label">Time Saved</div>
+              </div>
+            </div>
+            <div class="usecase-flow">
+              <div class="flow-step"><span class="flow-step-num">01</span> Exception detected in ERP or order management system</div>
+              <div class="flow-step"><span class="flow-step-num">02</span> AI classifies by type, urgency, and resolution path</div>
+              <div class="flow-step"><span class="flow-step-num">03</span> Standard exceptions resolved automatically</div>
+              <div class="flow-step"><span class="flow-step-num">04</span> Complex exceptions escalated with full context</div>
+              <div class="flow-step"><span class="flow-step-num">05</span> Customer notified automatically for impacted orders</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use Case 4: Industrial Service Quoting -->
+      <div class="usecase-block reverse">
+        <div>
+          <div class="usecase-tag">Industrial &amp; Manufacturing · Revenue Acceleration</div>
+          <h3>Complex Service <em>Quoting</em> for Industrial Organizations</h3>
+          <p>
+            Industrial service organizations deal with multi-variable quoting — equipment specifications, compliance requirements, parts availability, and custom labour configurations. We build AI quoting platforms that ingest RFQs, cross-reference your technical database, and produce accurate quotes in minutes rather than days — giving your sales team a competitive edge on response time.
+          </p>
+          <ul class="usecase-outcomes">
+            <li>RFQ ingested via email, portal, or direct input — AI parses specifications automatically</li>
+            <li>Cross-references parts database, compliance requirements, and historical job data</li>
+            <li>Draft quote generated for engineer review — not from scratch, from a strong baseline</li>
+            <li>Quote history and win/loss data feeds back into AI to improve accuracy over time</li>
+          </ul>
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-ghost">Discuss This Use Case →</a>
+        </div>
+        <div class="usecase-visual">
+          <div class="usecase-visual-content">
+            <div class="usecase-visual-label">System Flow — Industrial Quoting Agent</div>
+            <div class="usecase-metric-row">
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">5×</div>
+                <div class="usecase-metric-label">Faster Response</div>
+              </div>
+              <div class="usecase-metric">
+                <div class="usecase-metric-num">40%</div>
+                <div class="usecase-metric-label">Win Rate Lift</div>
+              </div>
+            </div>
+            <div class="usecase-flow">
+              <div class="flow-step"><span class="flow-step-num">01</span> RFQ received via email or customer portal</div>
+              <div class="flow-step"><span class="flow-step-num">02</span> AI parses specs, quantities, and compliance needs</div>
+              <div class="flow-step"><span class="flow-step-num">03</span> Cross-references parts DB and historical jobs</div>
+              <div class="flow-step"><span class="flow-step-num">04</span> Draft quote generated for engineer review</div>
+              <div class="flow-step"><span class="flow-step-num">05</span> Approved quote sent — outcome logged for learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── ARCHITECTURE ─── -->
+  <section class="arch-section" id="architecture">
+    <div class="container">
+      <div class="arch-grid">
+        <div>
+          <div class="section-label">Technical Architecture</div>
+          <h2 class="section-title">Built on a <em class="gold">Unified Intelligence</em> Stack</h2>
+          <div class="divider"></div>
+          <p style="font-size:16px; color:var(--gray-light); line-height:1.75; margin-bottom:24px;">
+            Every system we build follows a layered architecture that separates data ingestion, reasoning, and action — giving you full control, auditability, and the ability to evolve the system as your organization changes.
+          </p>
+          <p style="font-size:16px; color:var(--gray-light); line-height:1.75; margin-bottom:32px;">
+            We deploy on your infrastructure or in a managed cloud environment. All integrations are built to your existing systems — no rip-and-replace, no new platforms to learn.
+          </p>
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-primary">Discuss Your Architecture →</a>
+        </div>
+        <div>
+          <div class="arch-layers">
+            <div class="arch-layer">
+              <div class="arch-layer-icon">🔗</div>
+              <div>
+                <div class="arch-layer-label">Layer 1 · Data</div>
+                <div class="arch-layer-name">Integration &amp; Ingestion</div>
+                <div class="arch-layer-desc">ERP, CRM, AMS, field systems, email, APIs — unified into a single data layer</div>
+              </div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+              <div class="arch-layer-icon">🧠</div>
+              <div>
+                <div class="arch-layer-label">Layer 2 · Intelligence</div>
+                <div class="arch-layer-name">AI Reasoning Engine</div>
+                <div class="arch-layer-desc">LLM-powered reasoning with your business rules, context, and decision logic</div>
+              </div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+              <div class="arch-layer-icon">⚡</div>
+              <div>
+                <div class="arch-layer-label">Layer 3 · Agents</div>
+                <div class="arch-layer-name">Agentic Workflow Layer</div>
+                <div class="arch-layer-desc">Purpose-built agents that execute multi-step processes autonomously</div>
+              </div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+              <div class="arch-layer-icon">🖥️</div>
+              <div>
+                <div class="arch-layer-label">Layer 4 · Interface</div>
+                <div class="arch-layer-name">Human-in-the-Loop Controls</div>
+                <div class="arch-layer-desc">Dashboards, approval workflows, and override controls for your team</div>
+              </div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+              <div class="arch-layer-icon">📡</div>
+              <div>
+                <div class="arch-layer-label">Layer 5 · MCP</div>
+                <div class="arch-layer-name">MCP Server &amp; External Actions</div>
+                <div class="arch-layer-desc">Model Context Protocol for structured AI-to-system communication at scale</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INDUSTRIES ─── -->
+  <section id="industries">
+    <div class="container">
+      <div class="section-label">Industries</div>
+      <h2 class="section-title">Sectors We <em class="gold">Specialize In</em></h2>
+      <p class="section-sub">We go deep in a small number of verticals — which means we understand your workflows, your compliance environment, and your competitive pressures before we start building.</p>
+      <div class="industries-grid">
+        <div class="industry-card">
+          <div class="industry-icon">🏢</div>
+          <h4>Insurance &amp; Financial Services</h4>
+          <p>From MGA operations to independent brokerages, we build AI systems that handle the administrative burden of compliance, quoting, and client communication.</p>
+          <ul class="industry-use-cases">
+            <li>Dormant policy remarketing</li>
+            <li>Renewal automation and client retention</li>
+            <li>Compliance document processing</li>
+            <li>Producer performance dashboards</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🔧</div>
+          <h4>Trades &amp; Field Services</h4>
+          <p>HVAC, electrical, plumbing, and specialty contractors — we build mobile-first AI tools that give field teams the intelligence they need to close jobs faster.</p>
+          <ul class="industry-use-cases">
+            <li>On-site AI quoting for technicians</li>
+            <li>Technician scheduling and dispatch optimization</li>
+            <li>Parts and inventory intelligence</li>
+            <li>Customer communication automation</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏭</div>
+          <h4>Industrial &amp; Manufacturing</h4>
+          <p>Complex RFQ environments, multi-variable pricing, and compliance-heavy operations — we build AI systems that handle the complexity so your engineers can focus on engineering.</p>
+          <ul class="industry-use-cases">
+            <li>AI-assisted RFQ and quoting</li>
+            <li>Compliance and specification parsing</li>
+            <li>Supplier communication automation</li>
+            <li>Production exception management</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">📦</div>
+          <h4>Distribution &amp; Logistics</h4>
+          <p>High-volume order environments with constant exceptions, substitutions, and customer communications — we automate the triage and resolution workflows that consume your operations team.</p>
+          <ul class="industry-use-cases">
+            <li>Order exception classification and resolution</li>
+            <li>Backorder and substitution management</li>
+            <li>Customer notification automation</li>
+            <li>Carrier and vendor communication</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏗️</div>
+          <h4>Construction &amp; Engineering</h4>
+          <p>Project-based businesses with complex documentation, subcontractor coordination, and client reporting requirements — we build AI systems that keep projects on track and stakeholders informed.</p>
+          <ul class="industry-use-cases">
+            <li>Subcontractor coordination automation</li>
+            <li>RFI and submittal processing</li>
+            <li>Project status reporting</li>
+            <li>Change order management</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏥</div>
+          <h4>Healthcare &amp; Professional Services</h4>
+          <p>Compliance-sensitive environments where accuracy and auditability are non-negotiable — we build AI systems with the governance controls that regulated industries require.</p>
+          <ul class="industry-use-cases">
+            <li>Patient intake and scheduling automation</li>
+            <li>Documentation and coding assistance</li>
+            <li>Referral and follow-up management</li>
+            <li>Compliance monitoring and reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ENGAGEMENT MODEL ─── -->
+  <section class="engagement-section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:0;">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-title">From Discovery to <em class="gold">Production</em></h2>
+        <p class="section-sub" style="margin:0 auto;">A structured engagement model built for organizations that need results, not experiments.</p>
+      </div>
+      <div class="engagement-steps">
+        <div class="engagement-step">
+          <div class="eng-num">1</div>
+          <h5>Discovery &amp; Scoping</h5>
+          <p>We map your workflows, data environment, and integration landscape to identify the highest-value automation opportunities.</p>
+        </div>
+        <div class="engagement-step">
+          <div class="eng-num">2</div>
+          <h5>Architecture Design</h5>
+          <p>We design the full system architecture — data flows, agent logic, integration points, and human-in-the-loop controls.</p>
+        </div>
+        <div class="engagement-step">
+          <div class="eng-num">3</div>
+          <h5>Build &amp; Integration</h5>
+          <p>We build, test, and integrate the system against your actual data and systems — not a sandbox environment.</p>
+        </div>
+        <div class="engagement-step">
+          <div class="eng-num">4</div>
+          <h5>Pilot &amp; Validation</h5>
+          <p>We run a controlled pilot with your team, measure outcomes against baseline, and refine before full deployment.</p>
+        </div>
+        <div class="engagement-step">
+          <div class="eng-num">5</div>
+          <h5>Deploy &amp; Optimize</h5>
+          <p>Full deployment with ongoing monitoring, performance reporting, and continuous improvement as your operations evolve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROOF / NEWSLETTER CALLOUT ─── -->
+  <section class="proof-section">
+    <div class="container">
+      <div class="proof-banner">
+        <div>
+          <div class="section-label">Why Minds On Fire</div>
+          <h2 class="section-title" style="max-width:560px;">We've Been Building AI Systems Since <em class="gold">2020</em></h2>
+          <div class="divider"></div>
+          <p style="font-size:16px; color:var(--gray-light); line-height:1.75; max-width:520px; margin-bottom:0;">
+            Most AI consultancies started in 2023. We've been engineering AI systems for businesses since 2020 — which means we've seen what works, what fails, and what it actually takes to get AI into production in a complex organization. We bring that experience to every engagement.
+          </p>
+          <div class="proof-stat-grid">
+            <div class="proof-stat">
+              <div class="proof-stat-num">5+</div>
+              <div class="proof-stat-label">Years building AI systems for business</div>
+            </div>
+            <div class="proof-stat">
+              <div class="proof-stat-num">6</div>
+              <div class="proof-stat-label">Industry verticals with deep operational expertise</div>
+            </div>
+            <div class="proof-stat">
+              <div class="proof-stat-num">100%</div>
+              <div class="proof-stat-label">Custom-built — no off-the-shelf platforms</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-primary" style="white-space:nowrap;">
+            Book a Strategy Call →
+          </a>
+          <p style="margin-top:16px; font-size:13px; color:var(--gray); max-width:200px; line-height:1.6;">
+            No commitment. A 30-minute conversation about what's possible for your organization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ─── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-label">Get Started</div>
+        <h2 class="section-title">Ready to Talk About What <em class="gold">AI Can Do</em> for Your Organization?</h2>
+        <p class="section-sub">
+          We work with a small number of mid-market and enterprise clients at a time. If you're evaluating AI for internal efficiency, operational automation, or a custom platform build — let's have a real conversation about what's possible.
+        </p>
+        <div class="cta-buttons">
+          <a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting" class="btn-primary" style="font-size:15px; padding:16px 36px;">
+            Book a Strategy Call →
+          </a>
+          <a href="mailto:marcus@mindsonfire.ca" class="btn-ghost" style="font-size:15px; padding:16px 28px;">
+            Email Marcus Directly
+          </a>
+        </div>
+        <p style="margin-top:24px; font-size:13px; color:var(--gray);">
+          Or visit <a href="https://mindsonfire.ca" style="color:var(--gold); text-decoration:none;">mindsonfire.ca</a> to learn more about our full range of services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="https://mindsonfire.ca" class="nav-logo"><img src="MOF_Logo.png" alt="Minds On Fire" /></a>
+          <p>North American AI systems engineering and growth operations firm. We build AI that works in production — not in demos. Custom platforms, agentic workflows, and operational automation for organizations serious about efficiency.</p>
+          <a href="mailto:marcus@mindsonfire.ca" style="font-size:13px; color:var(--gold); text-decoration:none;">marcus@mindsonfire.ca</a>
+        </div>
+        <div class="footer-links">
+          <h5>This Site</h5>
+          <ul>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Minds On Fire</h5>
+          <ul>
+            <li><a href="https://mindsonfire.ca">Main Website</a></li>
+            <li><a href="https://agent.mindsonfire.ca">Small Business AI →</a></li>
+            <li><a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:marcus@mindsonfire.ca">marcus@mindsonfire.ca</a></li>
+            <li><a href="https://mindsonfire.ca">mindsonfire.ca</a></li>
+            <li><a href="https://calendly.com/marcus-mindsonfire/25-minute-meeting">Schedule a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Minds On Fire. All rights reserved.</p>
+        <div style="display:flex; gap:20px;">
+          <a href="https://mindsonfire.ca/privacy">Privacy Policy</a>
+          <a href="https://mindsonfire.ca/terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
